@@ -1,0 +1,187 @@
+/* Contenu de css/style.css */
+/* --- LE CORPS DE LA PAGE --- */
+body {
+    background-image: url('../images/fond.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- LE CONTENU DU HAUT (Titre + Slogan) --- */
+
+header{
+
+background-color: rgba(0, 0, 0, 0.351);
+/* Fond noir semi-transparent */
+color: white;
+padding: 1rem 5%;
+position: sticky;
+/* Pour que le menu reste en haut au défilement */
+top: 0;
+z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Logo à gauche, liens à droite */
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    /* Enlever les puces des listes */
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    /* Espace entre les rubriques */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    /* Enlever le soulignement des liens */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+    /* Change de couleur au survol (orange/or) */
+   
+    margin-top: auto;
+    /* Pousse tout le bloc vers le bas pour le centrer */
+    margin-bottom: auto;
+    /* Pousse tout le bloc vers le haut pour le centrer */
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    /* On enlève les marges par défaut */
+}
+
+header p {
+    font-size: 2.0rem;
+    /* On garde le slogan bien visible en haut */
+    text-shadow: 2px 2px 5px rgba(39, 22, 22, 0.645);
+}
+
+/* --- LE PIED DE PAGE --- */
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 0.8rem;
+    /* Petit texte pour les droits */
+    opacity: 0.9;
+    /* Très discret */
+    margin: 0;
+}
+
+/* LE PARENT : Il gère la disposition */
+.menu-container {
+    display: flex;
+    /* Aligne les cartes côte à côte */
+    flex-wrap: wrap;
+    /* Permet de passer à la ligne sur mobile */
+    justify-content: center;
+    /* Centre les cartes horizontalement */
+    gap: 30px;
+    /* Espace de 30px entre chaque carte */
+    padding: 50px 20px;
+    /* Espace au-dessus et en-dessous du menu */
+}
+
+/* L'ENFANT : La carte individuelle */
+.plat-card {
+    background-color: rgba(255, 255, 255, 0.684);
+    /* Blanc à 90% d'opacité */
+    color: #2c3e50;
+    /* Texte gris foncé pour le contraste */
+    padding: 25px;
+    /* Espace intérieur pour que le texte respire */
+    border-radius: 15px;
+    /* Coins arrondis */
+    width: 280px;
+    /* Largeur fixe pour chaque carte */
+    text-align: center;
+    /* Centre le texte à l'intérieur */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Ombre pour donner du relief */
+    transition: transform 0.3s;
+    /* Prépare l'animation pour le survol */
+}
+
+/* EFFET AU SURVOL : La petite touche pro */
+.plat-card:hover {
+    transform: translateY(-10px);
+    /* La carte monte légèrement au survol */
+}
+
+/* Style spécifique pour le prix */
+.prix {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #e67e22;
+    /* Une couleur orangée pour attirer l'oeil */
+    font-size: 1.2rem;
+}
+
+.photo-plat {
+    width: 100%;
+    /* L'image prend toute la largeur de la carte */
+    height: 180px;
+    /* On fixe une hauteur uniforme */
+    object-fit: cover;
+    /* Coupe l'image proprement sans la déformer */
+    border-radius: 10px;
+    /* Optionnel : arrondit les coins de l'image */
+    margin-bottom: 15px;
+    /* Espace entre l'image et le titre h3 */
+}
+
+/* On ajuste un peu la carte pour accueillir l'image */
+.plat-card {
+    padding: 15px;
+    /* Un peu moins de padding pour laisser place à l'image */
+    overflow: hidden;
+    /* Empêche le contenu de déborder */
+}
+
+.category-title {
+    text-align: center;
+    color: white;
+    /* Pour ressortir sur votre fond sombre */
+    font-size: 2.5rem;
+    margin-top: 60px;
+    /* Espace pour séparer les catégories */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* On peut changer légèrement la couleur de fond des cartes desserts 
+   pour les différencier visuellement si on le souhaite */
+   /* Animation au survol des liens du menu */
+.nav-links a {
+    transition: color 0.3s ease; /* Transition douce de 0.3 secondes */
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Change en orange/doré au survol */
+    text-decoration: underline; /* Optionnel : souligne au survol */
+}
