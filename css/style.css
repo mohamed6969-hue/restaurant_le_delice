@@ -176,3 +176,12 @@ footer p {
 
 /* On peut changer légèrement la couleur de fond des cartes desserts 
    pour les différencier visuellement si on le souhaite */
+   /* Animation au survol des liens du menu */
+.nav-links a {
+    transition: color 0.3s ease; /* Transition douce de 0.3 secondes */
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Change en orange/doré au survol */
+    text-decoration: underline; /* Optionnel : souligne au survol */
+}
