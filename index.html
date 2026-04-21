@@ -15,10 +15,11 @@
         <nav>
             <div class="logo">Le Délice</div>
             <ul class="nav-links">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Réservation</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Votre Avis</a></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#evenements">Événements</a></li>
+                <li><a href="#livraison">Livraison</a></li>
+                <li><a href="#avis">Votre Avis</a></li>
             </ul>
         </nav>
     </header>
@@ -38,6 +39,33 @@
                 <p>Sept légumes et semoule fine.</p>
                 <span class="prix">95 DH</span>
             </div>
+            <div class="plat-card">
+                <img src="images/rfissa.jpg" alt="Rfissa Marocaine" class="photo-plat">
+                <h3>Rfissa au Poulet</h3>
+                <p>Le plat réconfortant : poulet tendre, lentilles, fenugrec sur trid imbibé.</p>
+                <span class="prix">95 DH</span>
+            </div>
+
+            <div class="plat-card">
+                <img src="images/pastilla.jpg" alt="Pastilla de Poulet" class="photo-plat">
+                <h3>Pastilla Royale</h3>
+                <p>Feuilleté doré, croustillant au poulet, oignons caramélisés et amandes dorées.</p>
+                <span class="prix">120 DH</span>
+            </div>
+
+            <div class="plat-card">
+                <img src="images/mix_grillade.jpg" alt="Mix Grillade de Brochettes" class="photo-plat">
+                <h3>Mix-Grillade 'Délice'</h3>
+                <p>Assortiment de brochettes (agneau, dinde, bœuf) et demi-coquelet grillé.</p>
+                <span class="prix">110 DH</span>
+            </div>
+
+            <div class="plat-card">
+                <img src="images/cotelettes.jpg" alt="Côtelettes d'Agneau" class="photo-plat">
+                <h3>Côtelettes d'Agneau Grillées</h3>
+                <p>Côtelettes marinées aux épices douces, grillées au charbon de bois.</p>
+                <span class="prix">105 DH</span>
+            </div>
         </section>
 
         <h2 class="category-title">Nos Douceurs</h2>
@@ -49,8 +77,38 @@
                 <span class="prix">40 DH</span>
             </div>
         </section>
-    </main>
+        <section id="livraison" style="padding: 50px; text-align: center; background-color: rgba(255, 255, 255, 0.05);">
+            <h2>Livraison à Domicile 🛵</h2>
+            <p>Profitez de nos plats chez vous, chaud et rapide !</p>
 
+            <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+                <div>
+                    <h3>Zone de livraison</h3>
+                    <p>Casablanca (Maârif, Gauthier, Racine, Anfa)</p>
+                </div>
+                <div>
+                    <h3>Horaires</h3>
+                    <p>7j/7 de 12h00 à 23h00</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;">
+                <a href="tel:+212500000000"
+                    style="background-color: #f39c12; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                    Appeler pour commander
+                </a>
+            </p>
+        </section>
+        <section id="reservation" style="padding: 50px; text-align: center;">
+            <h2>Réserver une table</h2>
+            <p>Formulaire à venir ici...</p>
+        </section>
+
+        <section id="evenements" style="padding: 50px; text-align: center; background-color: rgba(255,255,255,0.1);">
+            <h2>Nos Événements</h2>
+            <p>Anniversaires, célébrations et plus !</p>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2026 Restaurant Le Délice - Tous droits réservés</p>
     </footer>
